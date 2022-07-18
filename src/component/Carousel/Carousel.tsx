@@ -7,7 +7,7 @@ import './_Carousel.scss';
 
 function CarouselFadeExample() {
     return (
-        <Carousel fade>
+        <Carousel fade className='carousel'>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
@@ -36,7 +36,7 @@ function CarouselFadeExample() {
                 />
 
                 <Carousel.Caption>
-                  
+
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

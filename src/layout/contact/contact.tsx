@@ -22,7 +22,7 @@ export default function Contact({}: ContactProps) {
                     <Row>
                         <Col>
                             <div className="contact__container__img">
-                                <img src={IMG}/>
+                                <img src={IMG} alt='photo'/>
                             </div>
                         </Col>
                         <Col>
