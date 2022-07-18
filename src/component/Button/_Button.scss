@@ -1,0 +1,17 @@
+.Button_header {
+  background: var(--bs-white);
+  text-transform: uppercase;
+  color: #21442C;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 5px 25px;
+  letter-spacing: 0;
+  min-width: 0;
+  border-radius: 3px;
+  cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: var(--bs-gray);
+      color: var(--bs-white);
+    }
+}

@@ -1,11 +1,29 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+html,
 body {
+  padding: 0;
   margin: 0;
-  font-family: 'Nunito', sans-serif, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Nunito', sans-serif;
+
+  background: var(--bs-white);
+
+
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 :root {
+
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;

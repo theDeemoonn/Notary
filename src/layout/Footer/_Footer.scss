@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 20px;
+
+}
+
+.link {
+  &:hover {
+    text-decoration: underline;
+    color: #212529FF;
+  }
+}
+
+.copyright {
+  margin-right: 10px;
+
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.footer__contacts:hover {
+  text-decoration: underline;
+  color: #212529FF;
+}
+

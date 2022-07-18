@@ -1,25 +1,22 @@
 import React from 'react';
-import './App.scss';
+
+import Navibar from "./component/Navbar/Navbar";
+import Footer from "./layout/Footer/Footer";
+import CarouselFadeExample from "./component/Carousel/Carousel";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+    return (
+        <div className="App">
+            <header className="App-header">
+                <Navibar/>
 
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+            </header>
+            <CarouselFadeExample/>
+
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
