@@ -2,7 +2,6 @@ import React, {DetailedHTMLProps, HTMLAttributes} from 'react';
 import Container from "react-bootstrap/Container";
 import {format} from 'date-fns';
 import './_Footer.scss';
-import {Button} from "react-bootstrap";
 
 
 export interface FooterProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
@@ -45,11 +44,11 @@ export default function Footer({className, ...props}: FooterProps): JSX.Element 
 
 
                 </Container>
-                <div className="d-grid gap-2">
-                    <Button href='tel:+79184241778' variant="primary" size="lg">
-                        Позвонить
-                    </Button>
-                </div>
+                {/*<div className="d-grid gap-2">*/}
+                {/*    <Button href='tel:+79184241778' variant="primary" size="lg">*/}
+                {/*        Позвонить*/}
+                {/*    </Button>*/}
+                {/*</div>*/}
             </Container>
 
         </footer>

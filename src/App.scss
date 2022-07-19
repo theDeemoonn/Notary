@@ -12,8 +12,47 @@
   text-align: center;
 }
 
+.card-group {
+  margin-top: 50px;
+}
+
+.public__registry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
 .text-body {
   text-align: center;
+}
+
+.registryIcon {
+
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.logo__card {
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+
+}
+
+.carousel-inner {
+  overflow: visible;
+}
+
+@media (min-width: 1400px) {
+  .card-group {
+    margin-left: 50px;
+  }
+
 }
 
 @media (max-width: 768px) {

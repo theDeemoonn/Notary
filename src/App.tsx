@@ -6,7 +6,11 @@ import Footer from "./layout/Footer/Footer";
 import CarouselFadeExample from "./component/Carousel/Carousel";
 import Container from "react-bootstrap/Container";
 import './App.scss';
-import {CardGroup, Row} from 'react-bootstrap';
+import {Button, CardGroup, Row} from 'react-bootstrap';
+import RegistryIcon from './icon/registry.png';
+import Dover from './icon/dover.png';
+import searchingCar from './icon/searchingCar.png'
+import openBook from './icon/open-book.png'
 
 function App() {
     return (
@@ -44,7 +48,12 @@ function App() {
 
                     <CardGroup className='card-group'>
                         <Row xs={1} md={3} className="gap-sm-4">
-                            <Card border="primary" style={{width: '18rem', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.47)'}}>
+                            <Card border="primary" style={{
+                                width: '18rem',
+                                alignItems: 'center',
+                                textAlign: 'center',
+                                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.47)'
+                            }}>
 
                                 <Card.Body>
 
@@ -58,7 +67,12 @@ function App() {
                                     </Card.Text>
                                 </Card.Body>
                             </Card> <Card border="primary"
-                                          style={{width: '18rem', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.47)'}}>
+                                          style={{
+                                              width: '18rem',
+                                              alignItems: 'center',
+                                              textAlign: 'center',
+                                              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.47)'
+                                          }}>
 
                             <Card.Body>
 
@@ -67,7 +81,12 @@ function App() {
                                 </Card.Text>
                             </Card.Body>
                         </Card> <Card border="primary"
-                                      style={{width: '18rem', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.47)'}}>
+                                      style={{
+                                          width: '18rem',
+                                          alignItems: 'center',
+                                          textAlign: 'center',
+                                          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.47)'
+                                      }}>
 
                             <Card.Body>
 
@@ -78,7 +97,12 @@ function App() {
                                 </Card.Text>
                             </Card.Body>
                         </Card> <Card border="primary"
-                                      style={{width: '18rem', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.47)'}}>
+                                      style={{
+                                          width: '18rem',
+                                          alignItems: 'center',
+                                          textAlign: 'center',
+                                          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.47)'
+                                      }}>
 
                             <Card.Body>
 
@@ -87,6 +111,76 @@ function App() {
                                 </Card.Text>
                             </Card.Body>
                         </Card>
+                        </Row>
+                    </CardGroup>
+
+
+                </div>
+            </Container>
+            <Container>
+                <div className='public__registry'>
+                    <img className='registryIcon' src={RegistryIcon} alt='registryLogo'/>
+                    <h2 className='h2'> Публичные реестры и сервисы</h2>
+
+
+                    <CardGroup>
+                        <Row xs={1} md={3} className="gap-sm-4">
+                            <Card border="primary" style={{
+                                width: '18rem',
+                                alignItems: 'center',
+                                textAlign: 'center',
+
+                                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.47)',
+                            }}>
+                                <Card.Img className='logo__card' variant="top" src={Dover}/>
+                                <Card.Body>
+                                    <Card.Title>Сервис проверки доверенностей</Card.Title>
+                                    <Card.Text>
+                                        С помощью этого сервиса можно проверить действительность выданной
+                                        доверенности
+                                    </Card.Text>
+                                    <Button href='https://www.reestr-dover.ru/' target='_blank'
+                                            variant="primary">Перейти</Button>
+                                </Card.Body>
+                            </Card>
+                            <Card border="primary" style={{
+                                width: '18rem',
+                                alignItems: 'center',
+                                textAlign: 'center',
+
+
+                                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.47)'
+                            }}>
+                                <Card.Img className='logo__card' variant="top" src={searchingCar}/>
+                                <Card.Body>
+                                    <Card.Title>Реестр уведомлений о залоге движимого имущества</Card.Title>
+                                    <Card.Text>
+                                        Перед покупкой автомобиля надо обязательно проверить его в реестре
+                                        залогов
+                                    </Card.Text>
+                                    <Button href='https://www.reestr-zalogov.ru/state/index' target='_blank'
+                                            variant="primary">Перейти</Button>
+                                </Card.Body>
+                            </Card>
+
+                            <Card border="primary" style={{
+                                width: '18rem',
+                                alignItems: 'center',
+                                textAlign: 'center',
+
+                                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.47)'
+                            }}>
+                                <Card.Img className='logo__card' variant="top" src={openBook}/>
+                                <Card.Body>
+                                    <Card.Title>Реестр наследственных дел</Card.Title>
+                                    <Card.Text>
+                                        Предназначен для поиск открытых наследственных дел у любого нотариуса Российской
+                                        Федерации
+                                    </Card.Text>
+                                    <Button href='https://notariat.ru/ru-ru/help/probate-cases/' target='_blank'
+                                            variant="primary">Перейти</Button>
+                                </Card.Body>
+                            </Card>
                         </Row>
                     </CardGroup>
 
