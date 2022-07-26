@@ -31,7 +31,9 @@ function Tariff() {
             {/*<p className="tariff__disclaimer"><sup>*</sup>Калькулятор создан только в ознакомительных целях. Подробную*/}
             {/*    информацию уточняйте по телефону</p>*/}
 
-            <Footer/>
+            <footer className='footer'>
+                <Footer/>
+            </footer>
 
 
         </div>

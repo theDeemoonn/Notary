@@ -13,7 +13,7 @@ export default function Footer({className, ...props}: FooterProps): JSX.Element 
         <footer className="footer" {...props}>
             <Container fluid style={{
                 backgroundColor: '#F8F9FAFF',
-                color: '#212529FF'
+                color: '#212529FF',
             }}>
                 <Container style={{display: 'flex', justifyContent: 'space-between'}}>
                     <div className="copyright">

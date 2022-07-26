@@ -26,7 +26,7 @@ function BasicExample() {
                         <NavDropdown title="Еще" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/tariff">Тарифы</NavDropdown.Item>
                             <NavDropdown.Divider/>
-                            <NavDropdown.Item href="/uslugi">
+                            <NavDropdown.Item href="/notarial_acts">
                                 Нотариальные действия
                             </NavDropdown.Item>
 

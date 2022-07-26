@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Tariff from "./layout/tariff/tariff";
 import Contact from "./layout/contact/contact";
 import App from "./App";
+import NotarialActs from "./layout/NotarialActs/NotarialActs";
 
 
 const root = ReactDOM.createRoot(
@@ -19,6 +20,7 @@ root.render(
             <Route path="/" element={<App/>}/>
             <Route path="/tariff" element={<Tariff/>}/>
             <Route path="/contact" element={<Contact/>}/>
+            <Route path="/notarial_acts" element={<NotarialActs/>}/>
         </Routes>
     </BrowserRouter>
 );

@@ -77,7 +77,7 @@ export default function Contact({}: ContactProps) {
             </main>
 
 
-            <footer>
+            <footer className='footer'>
                 <Footer/>
             </footer>
         </div>

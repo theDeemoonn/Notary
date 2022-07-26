@@ -188,8 +188,9 @@ function App() {
                 </div>
             </Container>
 
-
-            <Footer/>
+            <footer className='footer'>
+                <Footer/>
+            </footer>
         </div>
     );
 }
