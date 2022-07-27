@@ -1,15 +1,16 @@
 import React from 'react';
-import Navibar from "../../component/Navbar/Navbar";
-import Footer from "../Footer/Footer";
+import {motion} from 'framer-motion'
 import {Accordion} from "react-bootstrap";
 
 export type UslugiProps = {}
 
 export default function NotarialActs({}: UslugiProps) {
-    return (<div className="Uslugi">
-            <header className="App-header">
-                <Navibar/>
-            </header>
+    return (<motion.div className="Uslugi"
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        exit={{opacity: 0}}
+        >
+
             <main>
                 <h1 className='text-center mt-lg-5'>Нотариальные действия</h1>
                 <p className='m-lg-4 text-center me-lg-5 ms-lg-5'>В нотариальной конторе помогут Вам решить любые
@@ -177,9 +178,10 @@ export default function NotarialActs({}: UslugiProps) {
                                     удлиненные
                                     сроки
                                     принятия наследства (ст.&nbsp;1154&nbsp;ГК РФ).</p>
-                                <p>По&nbsp;общему правилу наследство может быть принято в&nbsp;течение шести месяцев
+                                <p>По&nbsp;общему правилу наследство может быть принято в&nbsp;<strong>течение шести
+                                    месяцев
                                     со&nbsp;дня
-                                    открытия наследства (ч.&nbsp;1&nbsp;ст.&nbsp;1154&nbsp;ГК РФ).</p>
+                                    открытия наследства</strong> (ч.&nbsp;1&nbsp;ст.&nbsp;1154&nbsp;ГК РФ).</p>
                                 <p>Днем открытия наследства является день смерти гражданина.&nbsp;</p>
                                 <p>В&nbsp;случае открытия наследства в&nbsp;день предполагаемой гибели
                                     гражданина&nbsp;(пункт
@@ -703,9 +705,6 @@ export default function NotarialActs({}: UslugiProps) {
                 </ul>
 
             </main>
-            <footer className='footer'>
-                <Footer/>
-            </footer>
-        </div>
+        </motion.div>
     );
 }

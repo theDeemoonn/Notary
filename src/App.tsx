@@ -1,8 +1,6 @@
 import React from 'react';
+import {motion} from 'framer-motion'
 import Card from 'react-bootstrap/Card';
-
-import Navibar from "./component/Navbar/Navbar";
-import Footer from "./layout/Footer/Footer";
 import CarouselFadeExample from "./component/Carousel/Carousel";
 import Container from "react-bootstrap/Container";
 import './App.scss';
@@ -14,12 +12,12 @@ import openBook from './icon/open-book.png'
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <Navibar/>
+        <motion.div className="App page"
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    exit={{opacity: 0}}
+        >
 
-
-            </header>
             <CarouselFadeExample/>
             <Container>
                 <div className='container__body'>
@@ -188,10 +186,8 @@ function App() {
                 </div>
             </Container>
 
-            <footer className='footer'>
-                <Footer/>
-            </footer>
-        </div>
+
+        </motion.div>
     );
 }
 

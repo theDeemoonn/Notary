@@ -1,18 +1,18 @@
 import React from 'react';
+import {motion} from 'framer-motion'
 import './_tariff.scss';
 import Table from "./table/table";
-import Footer from "../Footer/Footer";
-import Navibar from "../../component/Navbar/Navbar";
 import '../../index.scss'
 
 function Tariff() {
     return (
 
 
-        <div className="tariff">
-            <header className='_header'>
-                <Navibar/>
-            </header>
+        <motion.div className="tariff"
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    exit={{opacity: 0}}
+        >
             <div className="tariff__header">
                 <h1>Тарифы</h1>
                 <p className='tariff__title'>РАЗМЕРЫ НОТАРИАЛЬНОГО ТАРИФА И ПЛАТЫ ЗА УСЛУГИ ПРАВОВОГО И ТЕХНИЧЕСКОГО
@@ -31,12 +31,8 @@ function Tariff() {
             {/*<p className="tariff__disclaimer"><sup>*</sup>Калькулятор создан только в ознакомительных целях. Подробную*/}
             {/*    информацию уточняйте по телефону</p>*/}
 
-            <footer className='footer'>
-                <Footer/>
-            </footer>
 
-
-        </div>
+        </motion.div>
 
 
     );

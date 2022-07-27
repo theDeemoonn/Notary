@@ -1,9 +1,8 @@
 import React from 'react';
+import {motion} from 'framer-motion'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Navibar from "../../component/Navbar/Navbar";
-import Footer from "../Footer/Footer";
 import './_contact.scss'
 import IMG from '../../icon/DSCF6018@2x.webp'
 
@@ -12,10 +11,10 @@ export type ContactProps = {}
 
 export default function Contact({}: ContactProps) {
     return (
-        <div className="contact">
-            <header className='_header'>
-                <Navibar/>
-            </header>
+        <motion.div className="contact"
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    exit={{opacity: 0}}>
             <main className='_main'>
 
                 <Container>
@@ -77,10 +76,7 @@ export default function Contact({}: ContactProps) {
             </main>
 
 
-            <footer className='footer'>
-                <Footer/>
-            </footer>
-        </div>
+        </motion.div>
 
 
     );
