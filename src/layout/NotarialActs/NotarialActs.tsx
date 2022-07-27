@@ -1,6 +1,7 @@
 import React from 'react';
 import {motion} from 'framer-motion'
 import {Accordion} from "react-bootstrap";
+import ScrollUp from "../../component/ScrollUp/ScrollUp";
 
 export type UslugiProps = {}
 
@@ -10,6 +11,7 @@ export default function NotarialActs({}: UslugiProps) {
                         animate={{opacity: 1}}
                         exit={{opacity: 0}}
         >
+            <ScrollUp/>
 
             <main>
                 <h1 className='text-center mt-lg-5'>Нотариальные действия</h1>

@@ -1,0 +1,20 @@
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  background: white;
+  color: var(--bs-primary);
+  cursor: pointer;
+  border: 1px;
+  border-color: var(--bs-primary);
+  transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+  border: none;
+  box-shadow: 0 5px 10px #ccc;
+}
+
+
+.back-to-top:hover {
+  background: var(--bs-primary);
+  color: white;
+}

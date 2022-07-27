@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 import './_tariff.scss';
 import Table from "./table/table";
 import '../../index.scss'
+import ScrollUp from "../../component/ScrollUp/ScrollUp";
 
 function Tariff() {
     return (
@@ -23,6 +24,7 @@ function Tariff() {
 
 
                 {/*<TariffCalc/>*/}
+                <ScrollUp/>
 
 
                 <Table/>
