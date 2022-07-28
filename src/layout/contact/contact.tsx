@@ -7,9 +7,7 @@ import './_contact.scss'
 import IMG from '../../icon/DSCF6018@2x.webp'
 
 
-export type ContactProps = {}
-
-export default function Contact({}: ContactProps) {
+export default function Contact() {
     return (
         <motion.div className="contact"
                     initial={{opacity: 0}}
@@ -21,7 +19,7 @@ export default function Contact({}: ContactProps) {
                     <Row>
                         <Col>
                             <div className="contact__container__img">
-                                <img src={IMG} alt='photo'/>
+                                <img src={IMG} alt='notary_photo'/>
                             </div>
                         </Col>
                         <Col>

@@ -3,9 +3,8 @@ import {motion} from 'framer-motion'
 import {Accordion} from "react-bootstrap";
 import ScrollUp from "../../component/ScrollUp/ScrollUp";
 
-export type UslugiProps = {}
 
-export default function NotarialActs({}: UslugiProps) {
+export default function NotarialActs() {
     return (<motion.div className="Uslugi"
                         initial={{opacity: 0}}
                         animate={{opacity: 1}}
