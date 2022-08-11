@@ -59,13 +59,13 @@ export default function Contact() {
                     </Row>
                     <Row className='contact__container__bottom'>
                         <Col><p>Лицензия № 60 от 14 декабря 2006 года</p></Col>
-                        <Col><p>График работы:
+                        <Col><span><p>График работы:</p>
 
                             Пн-Пт с 9-00 до 17-00
 
                             Перерыв с 13-00 до 14-00<br/>
 
-                            Выходные дни: суббота, воскресенье</p></Col>
+                            <p>Выходные дни:</p> суббота, воскресенье</span></Col>
 
                     </Row>
                 </Container>
