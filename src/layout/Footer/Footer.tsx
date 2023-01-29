@@ -37,11 +37,11 @@ export default function Footer({className, ...props}: FooterProps): JSX.Element 
                         <a className='link' href="/tariff">Тарифы</a>
                     </div>
 
-
-                    <p>Сделано в <a className='link' target="_blank" href="http://sbys.me/"
-                                    rel="noreferrer">SBYS</a>
-                    </p>
-
+                    <div className='sbys'>
+                        <p>Сделано в <a className='link' target="_blank" href="http://sbys.me/"
+                                        rel="noreferrer">SBYS</a>
+                        </p>
+                    </div>
 
                 </Container>
                 {/*<div className="d-grid gap-2">*/}
