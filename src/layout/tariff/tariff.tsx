@@ -1,8 +1,10 @@
-import React, {useRef, useState} from 'react';
+import React, {memo, useRef, useState} from 'react';
 import {motion} from 'framer-motion'
 import './_tariff.scss';
 import '../../index.scss'
 import {usePdf} from "@mikecousins/react-pdf";
+
+import {ThreeDots} from 'react-loader-spinner'
 
 function Tariff() {
     const [page, setPage] = useState(1);
@@ -50,7 +52,15 @@ function Tariff() {
             {/*<ScrollUp/>*/}
 
             <div className='tariff__pdf'>
-                {!pdfDocument && <span>Loading...</span>}
+                {!pdfDocument && <ThreeDots
+                    height="90"
+                    width="90"
+                    radius="10"
+                    color="#0d6efd"
+                    ariaLabel="three-dots-loading"
+                    wrapperClass={'loader'}
+                    visible={true}
+                />}
                 <canvas ref={canvasRef}/>
                 {Boolean(pdfDocument && pdfDocument.numPages) && (
                     <nav>
@@ -87,4 +97,4 @@ function Tariff() {
 }
 
 
-export default Tariff;
+export default memo(Tariff);
