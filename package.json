@@ -1,6 +1,6 @@
 {
   "name": "notary",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@mikecousins/react-pdf": "^6.1.1",
