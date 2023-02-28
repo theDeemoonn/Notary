@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './_contact.scss'
 import IMG from '../../icon/DSCF6018@2x.webp'
+import ModalContact from "./modal/contactModal";
 
 
 export default function Contact() {
@@ -50,6 +51,9 @@ export default function Contact() {
                                         </a>
                                     </p>
                                 </div>
+                                <div className="contact__container__content__item">
+                                    <ModalContact/>
+                                </div>
                             </div>
 
 
@@ -58,7 +62,10 @@ export default function Contact() {
 
                     </Row>
                     <Row className='contact__container__bottom'>
-                        <Col><p>Лицензия № 60 от 14 декабря 2006 года</p></Col>
+                        {/*<Col><p>Лицензия № 60 от 14 декабря 2006 года</p>*/}
+                        <Col><p>Приказ о наделении полномочиями нотариуса <br/> № 45-л от 05.03.2007</p>
+                            <p>Регистрационный номер в реестре <br/> нотариусов: 01/34-н/01</p></Col>
+                        {/*<Col></Col>*/}
                         <Col><span><p>График работы:</p>
 
                             Пн-Пт с 9-00 до 17-00

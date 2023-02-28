@@ -9,6 +9,7 @@ import RegistryIcon from './icon/registry.png';
 import Dover from './icon/dover.png';
 import searchingCar from './icon/searchingCar.png'
 import openBook from './icon/open-book.png'
+import qrCode from './icon/qr-code.png'
 
 function App() {
     return (
@@ -22,7 +23,8 @@ function App() {
             <Container>
                 <div className='container__body'>
 
-                    <h1>Добро пожаловать на официальный сайт нотариуса Зверевой Людмилы
+                    <h1>Добро пожаловать на официальный сайт нотариуса Кошехабльского нотариального округа Зверевой
+                        Людмилы
                         Ивановны!</h1>
                     <div>
 
@@ -176,6 +178,24 @@ function App() {
                                         Федерации
                                     </Card.Text>
                                     <Button href='https://notariat.ru/ru-ru/help/probate-cases/' target='_blank'
+                                            variant="primary">Перейти</Button>
+                                </Card.Body>
+                            </Card>
+                            <Card border="primary" style={{
+                                width: '18rem',
+                                alignItems: 'center',
+                                textAlign: 'center',
+
+                                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.47)'
+                            }}>
+                                <Card.Img className='logo__card' variant="top" src={qrCode}/>
+                                <Card.Body>
+                                    <Card.Title>Проверка QR на документе</Card.Title>
+                                    <Card.Text>
+                                        Сервис проверит отсканированный QR-код в Единой информационной системе
+                                        нотариата.
+                                    </Card.Text>
+                                    <Button href='https://notariat.ru/ru-ru/qr/' target='_blank'
                                             variant="primary">Перейти</Button>
                                 </Card.Body>
                             </Card>
