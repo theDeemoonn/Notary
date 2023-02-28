@@ -18,8 +18,8 @@ function BasicExample() {
                     className="d-inline-block align-content-center"
                 />{' '}
                     Нотариус Зверева Людмила Ивановна</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg"/>
+                <Navbar.Collapse id="offcanvasNavbar-expand-lg">
                     <Nav className="ms-auto">
                         <Nav.Link href="/">Главная</Nav.Link>
                         <Nav.Link href="/contact">Контакты</Nav.Link>
