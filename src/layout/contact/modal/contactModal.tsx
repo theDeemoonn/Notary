@@ -14,7 +14,7 @@ export default function ModalContact() {
 
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
+            <Button variant="outline-primary" onClick={handleShow}>
                 Дополнительные контакты
             </Button>
 
