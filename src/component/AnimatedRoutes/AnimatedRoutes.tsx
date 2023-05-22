@@ -4,6 +4,7 @@ import App from "../../App";
 import Tariff from "../../layout/tariff/tariff";
 import NotarialActs from "../../layout/NotarialActs/NotarialActs";
 import Contact from "../../layout/contact/contact";
+import NotFound from "../../layout/404/404";
 import './_AnimatedRoutes.scss';
 import {Container} from "react-bootstrap";
 import {AnimatePresence} from 'framer-motion';
@@ -14,6 +15,7 @@ const routes = [
     {path: "/tariff", name: 'Тарифы', Component: <Tariff/>},
     {path: "/notarial-acts", name: 'Нотариальные действия', Component: <NotarialActs/>},
     {path: "/contact", name: 'Контакты', Component: <Contact/>},
+    {path: "*", name: '404', Component: <NotFound/>},
 
 ]
 
@@ -21,6 +23,7 @@ function Apps() {
     const location = useLocation();
     return (
         <AnimatePresence>
+
             <Container className='container'>
                 <Routes location={location} key={location.pathname}>
                     {routes.map(({path, Component}) => (
