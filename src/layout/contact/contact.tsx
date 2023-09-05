@@ -42,7 +42,6 @@ export default function Contact() {
                                 <div className="contact__container__content__item">
                                     <h2>Телефон</h2>
                                     <a className='link' href='tel:+79184241778'>+7 918 424-17-78</a> <br/>
-                                    <a className='link' href='tel:+78777092833'>+7 87770 9-28-33</a>
                                 </div>
                                 <div className="contact__container__content__item">
                                     <h2>Электронная почта</h2>
